@@ -12,5 +12,5 @@ int main(){
 			count = i;
 		}
 	}
-	cout << endl << "Mininal number -> " << tmp << endl << "Position -> " << count << endl;
+	cout << endl << "Minimal number -> " << tmp << endl << "Position -> " << count << endl;
 }

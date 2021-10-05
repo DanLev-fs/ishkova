@@ -5,17 +5,19 @@ using namespace std;
 
 #define ROWS 3 // Обозначил матрицу
 #define COLUMNS 3
+#define MIN 1
+#define MAX 9
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");//Подключил русский язык
 	int A[ROWS][COLUMNS];//Ввёл матрицу
 	
-	cout << "Заполнение массива случайными числами от 1 до 9: " << endl;//Вывожу на экран текст
+	cout << "Заполнение массива случайными числами от " << MIN << " до " << MAX << ": " << endl;//Вывожу на экран текст
 	
 	for (int i = 0; i < ROWS; i++) //Заполняем нашу матрицу
 		for (int j = 0; j < COLUMNS; j++)
-			A[i][j] = 1 + (rand() % 9);
+			A[i][j] = MIN + (rand() % MAX);
 			
 	cout << "Массив:" << endl;//Выводим массив
 	
